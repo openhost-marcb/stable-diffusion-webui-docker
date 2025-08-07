@@ -1,8 +1,6 @@
-FROM debian:bullseye-slim
+FROM bash:alpine3.19
 
-RUN apt-get update && apt-get install -y parallel aria2
+RUN apk update && apk add parallel aria2
 COPY . /docker
 RUN chmod +x /docker/download.sh
 ENTRYPOINT ["/docker/download.sh"]
-
-
