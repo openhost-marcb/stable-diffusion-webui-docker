@@ -1,4 +1,4 @@
-FROM bash:alpine3.19
+FROM bash:alpine3.20
 
 RUN echo "https://ftp.halifax.rwth-aachen.de/alpine/v3.19/main" > /etc/apk/repositories && \
     echo "https://ftp.halifax.rwth-aachen.de/alpine/v3.19/community" >> /etc/apk/repositories && \
